@@ -19,7 +19,7 @@ function App() {
     try {
       const parsedJson = JSON.parse(jsonInput);
 
-      const res = await fetch('http://localhost:3000/bfhl', {
+      const res = await fetch('https://bajaj-eight-woad.vercel.app/bfhl', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ data: parsedJson.data }),
